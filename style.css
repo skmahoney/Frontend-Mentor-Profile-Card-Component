@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat no-repeat;
+  background-position: top -640px left -307px, bottom -640px right -307px;
+  background-size: 978px 978px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 125px auto;
+  width: 350px;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+
+.card-header {
+  height: 140px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.card-img-profile {
+  margin-left: 120px;
+  margin-right: auto;
+  margin-top: -60px;
+  margin-bottom: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.intro {
+  display: block;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  padding-top: 10px;
+}
+
+#name {
+  font-weight: 800;
+  color: #000;
+  font-size: 18px;
+}
+
+hr {
+  color: hsl(0, 0%, 59%);
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2em;
+  padding-bottom: 10px;
+}
+
+.bold {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+@media (max-height: 375px) {
+  body {
+    width: 100%;
+    height: auto;
+    background-image: url("/images/bg-pattern-top.svg"),
+      url("/images/bg-pattern-bottom.svg");
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat no-repeat;
+    background-position: top -700px left -575px, bottom -700px right -575px;
+    background-size: 978px 978px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    height: auto;
+    background-image: url("/images/bg-pattern-top.svg"),
+      url("/images/bg-pattern-bottom.svg");
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat no-repeat;
+    background-position: top -220px left -275px, bottom -220px right -275px;
+    background-size: 500px 500px;
+  }
+}
